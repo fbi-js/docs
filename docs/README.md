@@ -6,11 +6,13 @@ tagline: 开源的工作流工具
 actionText: 快速上手 →
 actionLink: /pages/3x/
 features:
-  - title: 简洁至上
-    details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-  - title: Vue驱动
-    details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
-  - title: 高性能
-    details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
+  - title: 模板管理
+    details: 快速轻松地创建和构建项目。(版本 3.0 支持基于 git 的版本控制)
+  - title: 任务管理
+    details: 轻松管理重复的流程。只需将重复的流程写进 js 文件里，并添加到 fbi 全局即可
+  - title: 依赖管理
+    details: 您可以选择让 fbi 管理开发依赖项，并在多个项目之间共享，使项目目录更加简洁
+  - title: 高扩展性
+    details: 通过 fbi 创建适合您习惯的工作流程非常简单
 footer: MIT Licensed | Copyright © 2018-present Evan You
 ---

@@ -1,4 +1,4 @@
-## 官方模板列表
+# 官方模板列表
 
 | 名称                                                                          | 类型 |                      说明 |
 | ----------------------------------------------------------------------------- | :--: | ------------------------: |
@@ -10,4 +10,4 @@
 | [pack](https://github.com/fbi-templates/fbi-task-pack)                        | 项目 |                      打包 |
 | [deploy](https://github.com/fbi-templates/fbi-task-deploy)                    | 项目 |                  项目部署 |
 
-> 更多官方模板：[https://github.com/fbi-templates](https://github.com/fbi-templates)
+> 更多官方模板：<https://github.com/fbi-templates>

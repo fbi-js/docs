@@ -6,9 +6,17 @@ sidebarDepth: 0
 
 > fbi: Front-end & Back-end(node.js) development Intelligent
 
+[![](https://img.shields.io/badge/npm-v3.3.1-blue)](https://www.npmjs.com/package/fbi)
+[![](https://img.shields.io/badge/node.js->=7.6.0-green)](https://www.npmjs.com/package/fbi)
+[![](https://img.shields.io/badge/build-passing-brightgreen)](https://www.npmjs.com/package/fbi)
+[![](https://img.shields.io/badge/coverage-76%-red)](https://www.npmjs.com/package/fbi)
+[![](https://img.shields.io/badge/downloads-150/month-brightgreen)](https://www.npmjs.com/package/fbi)
+[![](https://img.shields.io/badge/license-MIT-green)](https://www.npmjs.com/package/fbi)
+[![](https://img.shields.io/badge/code%20style-XO-brightgreen)](https://www.npmjs.com/package/fbi)
+
 fbi 是一个开源的工作流工具。它旨在帮助开发人员提高生产力，统一和标准化团队工作流程。
 
-Github: [https://github.com/AlloyTeam/fbi](https://github.com/AlloyTeam/fbi)
+Github: <https://github.com/AlloyTeam/fbi>
 
 ## 主要特性
 

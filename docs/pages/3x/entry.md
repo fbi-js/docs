@@ -38,7 +38,7 @@ $ fbi set npm={alias}
 $ fbi init https://github.com/fbi-templates/fbi-project-mod.git my-project
 ```
 
-> 查看更多官方模板：官方模板列表
+> 查看更多官方模板：[官方模板列表](/pages/3x/more.md)
 
 ### 二、运行任务
 

@@ -58,6 +58,43 @@ $ fbi ls config store util
 | TEMPLATE_ADD_IGNORE         |  添加模板时的忽略项  |                                                                   .DS_Store,.svn,.git,dst,dist |
 | VERSION_SEPARATOR           |      版本分隔符      |                                                                                              @ |
 
+### `stores` 仓库信息说明
+
+- 查看： `$ fbi ls store`
+- 使用：`ctx.stores`
+
+| 项          |     说明     |                                                                                      示例 |
+| ----------- | :----------: | ----------------------------------------------------------------------------------------: |
+| type        |   模板类型   |                                                                              project/task |
+| path        |   模板路径   |                                                 /Users/{yourname}/.fbi/fbi-project-simple |
+| version     | 模板版本信息 | false: 不支持版本控制<br>{"latest":"v3.1.0","current":"v3.1.0","all":["v3.0.0","v3.1.0"]} |
+| repository  | 模板来源路径 |                                    <https://github.com/fbi-templates/fbi-project-mod.git> |
+| description |   模板描述   |                                                        Node service, npm module template. |
+| tasks       | 模板内含任务 |                                                                               build,serve |
+
+### utils 内置工具类说明
+
+- 查看： `$ fbi ls util`
+- 使用：`ctx.utils[分类][方法] / ctx.utils[方法]`
+
+| 分类   |                                               方法                                               |                                                                 说明 |
+| ------ | :----------------------------------------------------------------------------------------------: | -------------------------------------------------------------------: |
+| fs     |          stat,mkdirp,exist,existSync,read,<br>write,copy,remove,list,isEmptyDir,homeDir          |                                                           文件操作类 |
+| style  | bold,italic,underline,inverse,white,<br>grey,black,blue,cyan,green,magenta,red,<br>yellow,normal |                                                           文本样式类 |
+| type   |                      isJson,isObject,isArray,isTaskFile,<br>isPath,isGitUrl                      |                                                           类型判断类 |
+| git    |               is,clone,pull,tags,currentTag,<br>currentBranch,checkout,getBranchs                |                                                           git 操作类 |
+| path   |                           isAbsolute,isRelative,normalize,cwd,join,dir                           |                                                          path 操作类 |
+| Logger |                                debug,info,success,warn,error,log                                 | 日志类， 使用方法 ：const log = new ctx.utils.Logger(); log.info(‘’) |
+| 其他   |                                            argvParse                                             |                                                         终端参数解析 |
+| 其他   |                                              assign                                              |                                                          json 深合并 |
+| 其他   |                                            dateFormat                                            |                                                       日期时间格式化 |
+| 其他   |                                               exec                                               |                                                  spawn 的 promise 版 |
+| 其他   |                                               flow                                               |                                                         终端交互方法 |
+| 其他   |                                            promisify                                             |                                                           promise 化 |
+| 其他   |                                             sequence                                             |                                                 顺序执行多个 promise |
+
+特殊工具类 logger 使用：`ctx.logger[方法]`
+
 ## 运行任务
 
 ```
@@ -243,7 +280,7 @@ $ fbi init vue my-project -t
 $ fbi init vue my-project -a
 ```
 
-> 在已有项目上执行 fbi init [option], 只更新指定的 option, 不更新 src。
+> 在已有项目上执行 `fbi init [option]`, 只更新指定的 option, 不更新 src。
 
 ### 切换模板版本
 

@@ -16,7 +16,7 @@ module.exports = {
     sidebar: {
       '/pages/3x/': ['', 'entry', 'advance', 'more']
     },
-    lastUpdated: 'Last Updated',
+    lastUpdated: '最近更新',
     smoothScroll: true,
     markdown: {
       extracHeaders: ['h2', 'h3', 'h4']
