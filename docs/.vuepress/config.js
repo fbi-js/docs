@@ -1,9 +1,9 @@
 module.exports = {
   title: 'fbi docs',
   description: 'fbi文档, docs, doucument',
-  head: [['link', { rel: 'icon', href: '../logo.png' }]],
+  head: [['link', { rel: 'icon', href: '../logo.jpeg' }]],
   themeConfig: {
-    logo: '../logo.png',
+    logo: '../logo.jpeg',
     nav: [
       {
         text: '版本',
@@ -14,7 +14,8 @@ module.exports = {
       }
     ],
     sidebar: {
-      '/pages/3x/': ['', 'entry', 'advance', 'more']
+      '/pages/3x/': ['', 'entry', 'advance', 'more'],
+      '/pages/4x/': ['', 'entry', 'advance', 'more']
     },
     lastUpdated: '最近更新',
     smoothScroll: true,

@@ -1,13 +1,13 @@
 ---
 home: true
-heroImage: /logo.png
+heroImage: /logo.jpeg
 heroText: FBI
 tagline: 开源的工作流工具
 actionText: 快速上手 →
 actionLink: /pages/3x/
 features:
   - title: 模板管理
-    details: 快速轻松地创建和构建项目。(版本 3.0 支持基于 git 的版本控制)
+    details: 快速轻松地创建和构建项目。(版本 3.x 支持基于 git 的版本控制)
   - title: 任务管理
     details: 轻松管理重复的流程。只需将重复的流程写进 js 文件里，并添加到 fbi 全局即可
   - title: 依赖管理
