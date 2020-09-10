@@ -17,7 +17,7 @@ $ pnpm i -g fbi@next
 ### 一、基于远程仓库添加 fbi 模板
 
 ```
-$ fbi-next add <remote repositories...>
+$ fbi add <remote repositories...>
 ```
 
 > 查看更多官方模板：[官方模板列表](/pages/4x/more.md)
@@ -25,19 +25,19 @@ $ fbi-next add <remote repositories...>
 ### 二、通过添加的模板创建项目
 
 ```bash
-$ fbi-next create <tempalate name>
+$ fbi create <tempalate name>
 ```
 
-> 使用 `$ fbi-next ls` 可以查看已添加和关联的仓库及模板
+> 使用 `$ fbi ls` 可以查看已添加和关联的仓库及模板
 
 ### 三、运行任务
 
 ```shell
 $ cd my-project
 
-$ fbi-next serve
+$ fbi serve
 # OR
-$ fbi-next s
+$ fbi s
 ```
 
-> `$ fbi-next ls` 可查看当前目录可用的任务和模板
+> `$ fbi ls` 可查看当前目录可用的任务和模板

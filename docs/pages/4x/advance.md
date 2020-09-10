@@ -5,7 +5,7 @@
 查看已添加的仓库及模板信息
 
 ```
-$ fbi-next ls/list [factory] [flags]
+$ fbi ls/list [factory] [flags]
 ```
 
 **factory**
@@ -16,7 +16,7 @@ $ fbi-next ls/list [factory] [flags]
 **例子**
 
 ```
-$ fbi-next ls factory-web
+$ fbi ls factory-web
 ```
 
 **flags**
@@ -30,8 +30,8 @@ $ fbi-next ls factory-web
 **例子**
 
 ```
-$ fbi-next ls -a
-$ fbi-next ls -v
+$ fbi ls -a
+$ fbi ls -v
 ```
 
 ## 模板管理
@@ -39,7 +39,7 @@ $ fbi-next ls -v
 ### 通过远程仓库添加
 
 ```
-$ fbi-next add <remote repositories...>
+$ fbi add <remote repositories...>
 ```
 
 **remote repositories**
@@ -50,22 +50,22 @@ $ fbi-next add <remote repositories...>
 - 例子：
 
 ```
-$ fbi-next add https://github.com/fbi-js/factory-web
+$ fbi add https://github.com/fbi-js/factory-web
 ```
 
 ### 添加本地模板
 
 ```
 $ cd local-factory  // 切到本地要link的仓库目录下
-$ fbi-next link
+$ fbi link
 $ cd ..            // 切出当前仓库目录
-$ fbi-next ls      // 查看仓库是否关联成功
+$ fbi ls      // 查看仓库是否关联成功
 ```
 
 ### 解除本地模板链接
 
 ```
-$ fbi-next unlink [factory]
+$ fbi unlink [factory]
 ```
 
 **factory**
@@ -80,7 +80,7 @@ $ fbi unlink factory-web
 # OR
 
 $ cd factory-web // 先切换到需要unlink的仓库目录下
-$ fbi-next unlink
+$ fbi unlink
 ```
 
 ### 移除模板
@@ -88,7 +88,7 @@ $ fbi-next unlink
 解除模板与 fbi 的链接并移除模板的本地文件
 
 ```
-$ fbi-next remove <repositorie name>
+$ fbi remove <repositorie name>
 ```
 
 **repositorie name**
@@ -99,7 +99,7 @@ $ fbi-next remove <repositorie name>
 - 例子：
 
 ```
-$ fbi-next remove factory-web
+$ fbi remove factory-web
 ```
 
 ## 项目管理
@@ -118,7 +118,7 @@ $ fbi create <template> [-p]
 - 例子：
 
 ```shell
-$ fbi-next create web
+$ fbi create web
 ```
 
 **-p**
@@ -128,15 +128,15 @@ $ fbi-next create web
 - 例子：
 
 ```shell
-$ fbi-next create web -p yarn
+$ fbi create web -p yarn
 ```
 
 ## 其他命令
 
 ```bash
-$ fbi-next info // 查看context信息
-$ fbi-next -v/--version
-$ fbi-next -h/--help
+$ fbi info // 查看context信息
+$ fbi -v/--version
+$ fbi -h/--help
 ```
 
 ## 模板开发
