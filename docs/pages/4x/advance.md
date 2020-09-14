@@ -39,17 +39,24 @@ $ fbi ls -v
 ### 通过远程仓库添加
 
 ```
-$ fbi add <remote repositories...>
+$ fbi add <repositories...>
 ```
 
-**remote repositories**
+**repositories**
 
 - 描述：模板仓库地址
 - 类型：必需
-- 取值：远程 git 仓库地址，如：https://github.com/fbi-js/factory-web
+- 取值：
+  - 模板仓库模板模板名称，如：factory-web、fbi-js/factory-node
+  - 远程 git 仓库地址，如：https://github.com/fbi-js/factory-web
+  -
 - 例子：
 
 ```
+$ fbi add factory-web
+# OR
+$ fbi add fbi-js/factory-web
+# OR
 $ fbi add https://github.com/fbi-js/factory-web
 ```
 
@@ -107,23 +114,50 @@ $ fbi remove factory-web
 ### 初始化
 
 ```
-$ fbi create <template> [-p]
+$ fbi create <template|factory> [project] [-p]
 ```
 
 **template**
 
 - 描述：模板名称
 - 类型：必需
-- 取值：本地模板名称，如：web
+- 取值：本地已添加模板名称，如：web
 - 例子：
 
 ```shell
 $ fbi create web
 ```
 
+**factory**
+
+- 描述：factory 名称
+- 类型：必需
+- 取值：
+  - username/factory-name， 如：fbi-js/factory-web、factory-web
+  - 完成的 factory 仓库地址，如：https://github.com/fbi-js/factory-web
+- 例子：
+
+```shell
+$ fbi create fbi-js/factory-web
+# OR
+$ fbi create factory-web
+# OR
+$ fbi create https://github.com/fbi-js/factory-web
+```
+
+**project**
+
+- 描述： 通过模板创建的新项目的名称
+- 类型：可选
+- 例子：
+
+```shell
+$ fbi create web my-project
+```
+
 **-p**
 
-- 描述：package manage, 指定创建模板后安装相关依赖使用的包管理器，如： pnpm、yarn、npm，默认为 npm
+- 描述：package manage, 指定创建模板后安装相关依赖使用的包管理器，如： pnpm、yarn、npm，默认为 pnpm
 - 类型：可选
 - 例子：
 

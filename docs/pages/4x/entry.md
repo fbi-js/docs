@@ -25,7 +25,7 @@ $ fbi add <remote repositories...>
 ### 二、通过添加的模板创建项目
 
 ```bash
-$ fbi create <tempalate name>
+$ fbi create <tempalate|factory> [project]
 ```
 
 > 使用 `$ fbi ls` 可以查看已添加和关联的仓库及模板
