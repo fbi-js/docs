@@ -14,5 +14,6 @@ features:
     details: 您可以选择让 fbi 管理开发依赖项，并在多个项目之间共享，使项目目录更加简洁
   - title: 高扩展性
     details: 通过 fbi 创建适合您习惯的工作流程非常简单
-footer: MIT Licensed | Copyright © 2015-present [fbi-js](https://github.com/fbi-js)
 ---
+
+<Footer />
