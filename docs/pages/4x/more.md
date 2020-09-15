@@ -18,4 +18,4 @@
 $ fbi add factory-commands
 ```
 
-fbi 添加仓库后即可使用其包含的 commit、demo 等明令
+fbi 添加仓库后即可使用其包含的 commit、demo 等命令

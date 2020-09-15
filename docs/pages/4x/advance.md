@@ -1,5 +1,19 @@
 # 进阶
 
+## 命令速查
+
+[add - 添加模板或任务（若已存在则更新相关模板或任务）](#通过远程仓库添加)  
+[create - 根据模板创建本地项目](#初始化)  
+[link - 链接本地 factory](#添加本地模板)  
+[unlink - 解除本地 factory 链接](#解除本地模板链接)  
+[list - 查看所有已添加的 factory 及其信息](#查看信息)  
+[remove - 从 store 中移除 factory 并删除本地 factory](#移除模板)  
+clean - 清除 store 数据  
+info - 查看 context 信息  
+-v/--version - 查看 fbi 版本号  
+-d/--debug - 查看目前正在调试的信息  
+-h/--help - 帮助信息
+
 ## 查看信息
 
 查看已添加的仓库及模板信息
@@ -25,13 +39,11 @@ $ fbi ls factory-web
 - 类型：可选
 - -a/--all：展示所有仓库信息
 - -p/--projects：展示所有项目信息
-- -v/--versions：展示 fbi 版本
 
 **例子**
 
 ```
 $ fbi ls -a
-$ fbi ls -v
 ```
 
 ## 模板管理
@@ -186,7 +198,7 @@ $ fbi -h/--help
 |--|--|--|-- ...
 |--|--|-- templates // 模板运行文件
 |--|--|--|-- ...
-|--|-- templates // 放模板文件夹
+|--|-- templates // 模板文件夹
 |--|--|-- ...
 |--|-- .fbi.config.js // fbi配置文件，配置文档待补充
 |--|-- package.json
