@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>入门 | fbi docs</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="../logo.png">
+    <meta name="description" content="fbi文档, docs, doucument">
+    <link rel="preload" href="/assets/css/0.styles.85a5d938.css" as="style"><link rel="preload" href="/assets/js/app.199ef741.js" as="script"><link rel="preload" href="/assets/js/2.748c1ab3.js" as="script"><link rel="preload" href="/assets/js/8.46c95a19.js" as="script"><link rel="prefetch" href="/assets/js/10.f2c1b658.js"><link rel="prefetch" href="/assets/js/11.bb142ca4.js"><link rel="prefetch" href="/assets/js/12.da53e399.js"><link rel="prefetch" href="/assets/js/13.b52be260.js"><link rel="prefetch" href="/assets/js/3.111bd329.js"><link rel="prefetch" href="/assets/js/4.3517de2a.js"><link rel="prefetch" href="/assets/js/5.9d01e898.js"><link rel="prefetch" href="/assets/js/6.bd8470be.js"><link rel="prefetch" href="/assets/js/7.74c49802.js"><link rel="prefetch" href="/assets/js/9.68f34359.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.85a5d938.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="../logo.png" alt="fbi docs" class="logo"> <span class="site-name can-hide">fbi docs</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="版本" class="dropdown-title"><span class="title">版本</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/3x/" class="nav-link router-link-active">
+  3.x
+</a></li><li class="dropdown-item"><!----> <a href="/pages/4x/" class="nav-link">
+  4.x
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="版本" class="dropdown-title"><span class="title">版本</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/3x/" class="nav-link router-link-active">
+  3.x
+</a></li><li class="dropdown-item"><!----> <a href="/pages/4x/" class="nav-link">
+  4.x
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/pages/3x/" aria-current="page" class="sidebar-link">3.x 文档</a></li><li><a href="/pages/3x/entry.html" aria-current="page" class="active sidebar-link">入门</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/3x/entry.html#安装和配置" class="sidebar-link">安装和配置</a></li><li class="sidebar-sub-header"><a href="/pages/3x/entry.html#快速开始" class="sidebar-link">快速开始</a></li></ul></li><li><a href="/pages/3x/advance.html" class="sidebar-link">进阶</a></li><li><a href="/pages/3x/more.html" class="sidebar-link">官方模板列表</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="入门"><a href="#入门" class="header-anchor">#</a> 入门</h1> <h2 id="安装和配置"><a href="#安装和配置" class="header-anchor">#</a> 安装和配置</h2> <h3 id="一、安装"><a href="#一、安装" class="header-anchor">#</a> 一、安装</h3> <p>FBI 需安装在全局，以便在任意目录可开始你的工作流。</p> <ul><li>使用 npm</li></ul> <div class="language-shell extra-class"><pre class="language-shell"><code>$ <span class="token function">npm</span> i -g fbi
+</code></pre></div><p>或者</p> <ul><li>使用 yarn</li></ul> <div class="language-shell extra-class"><pre class="language-shell"><code>$ <span class="token function">yarn</span> global <span class="token function">add</span> fbi
+</code></pre></div><h3 id="二、配置"><a href="#二、配置" class="header-anchor">#</a> 二、配置</h3> <p>如果你使用 npm 以外的 js 模块管理工具，请将以下 {alias} 替换为目标名称，参考值：cnpm, tnpm, yarn</p> <div class="language- extra-class"><pre class="language-text"><code>$ fbi set npm={alias}
+</code></pre></div><p>该设置将应用在添加模板、运行任务等场景时自动安装依赖，详情参考依赖管理。</p> <h2 id="快速开始"><a href="#快速开始" class="header-anchor">#</a> 快速开始</h2> <h3 id="一、基于远程模板新建项目"><a href="#一、基于远程模板新建项目" class="header-anchor">#</a> 一、基于远程模板新建项目</h3> <div class="language- extra-class"><pre class="language-text"><code>$ fbi init https://github.com/fbi-templates/fbi-project-mod.git my-project
+</code></pre></div><blockquote><p>查看更多官方模板：<a href="/pages/3x/more.html">官方模板列表</a></p></blockquote> <h3 id="二、运行任务"><a href="#二、运行任务" class="header-anchor">#</a> 二、运行任务</h3> <div class="language-shell extra-class"><pre class="language-shell"><code>$ <span class="token builtin class-name">cd</span> my-project
+$ fbi s
+</code></pre></div><blockquote><p><code>$ fbi ls</code> 可查看当前目录可用的任务和模板</p></blockquote></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最近更新:</span> <span class="time">7/30/2020, 3:21:21 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/pages/3x/" class="prev router-link-active">
+        3.x 文档
+      </a></span> <span class="next"><a href="/pages/3x/advance.html">
+        进阶
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.199ef741.js" defer></script><script src="/assets/js/2.748c1ab3.js" defer></script><script src="/assets/js/8.46c95a19.js" defer></script>
+  </body>
+</html>

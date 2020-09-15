@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>进阶 | fbi docs</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="../logo.png">
+    <meta name="description" content="fbi文档, docs, doucument">
+    <link rel="preload" href="/assets/css/0.styles.85a5d938.css" as="style"><link rel="preload" href="/assets/js/app.199ef741.js" as="script"><link rel="preload" href="/assets/js/2.748c1ab3.js" as="script"><link rel="preload" href="/assets/js/7.74c49802.js" as="script"><link rel="prefetch" href="/assets/js/10.f2c1b658.js"><link rel="prefetch" href="/assets/js/11.bb142ca4.js"><link rel="prefetch" href="/assets/js/12.da53e399.js"><link rel="prefetch" href="/assets/js/13.b52be260.js"><link rel="prefetch" href="/assets/js/3.111bd329.js"><link rel="prefetch" href="/assets/js/4.3517de2a.js"><link rel="prefetch" href="/assets/js/5.9d01e898.js"><link rel="prefetch" href="/assets/js/6.bd8470be.js"><link rel="prefetch" href="/assets/js/8.46c95a19.js"><link rel="prefetch" href="/assets/js/9.68f34359.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.85a5d938.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="../logo.png" alt="fbi docs" class="logo"> <span class="site-name can-hide">fbi docs</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="版本" class="dropdown-title"><span class="title">版本</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/3x/" class="nav-link router-link-active">
+  3.x
+</a></li><li class="dropdown-item"><!----> <a href="/pages/4x/" class="nav-link">
+  4.x
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="版本" class="dropdown-title"><span class="title">版本</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/3x/" class="nav-link router-link-active">
+  3.x
+</a></li><li class="dropdown-item"><!----> <a href="/pages/4x/" class="nav-link">
+  4.x
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/pages/3x/" aria-current="page" class="sidebar-link">3.x 文档</a></li><li><a href="/pages/3x/entry.html" class="sidebar-link">入门</a></li><li><a href="/pages/3x/advance.html" aria-current="page" class="active sidebar-link">进阶</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/3x/advance.html#查看信息" class="sidebar-link">查看信息</a></li><li class="sidebar-sub-header"><a href="/pages/3x/advance.html#运行任务" class="sidebar-link">运行任务</a></li><li class="sidebar-sub-header"><a href="/pages/3x/advance.html#模板管理" class="sidebar-link">模板管理</a></li><li class="sidebar-sub-header"><a href="/pages/3x/advance.html#项目管理" class="sidebar-link">项目管理</a></li><li class="sidebar-sub-header"><a href="/pages/3x/advance.html#模板开发" class="sidebar-link">模板开发</a></li><li class="sidebar-sub-header"><a href="/pages/3x/advance.html#依赖管理" class="sidebar-link">依赖管理</a></li><li class="sidebar-sub-header"><a href="/pages/3x/advance.html#接入-fbi" class="sidebar-link">接入 FBI</a></li></ul></li><li><a href="/pages/3x/more.html" class="sidebar-link">官方模板列表</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="进阶"><a href="#进阶" class="header-anchor">#</a> 进阶</h1> <h2 id="查看信息"><a href="#查看信息" class="header-anchor">#</a> 查看信息</h2> <div class="language- extra-class"><pre class="language-text"><code>$ fbi ls [item] [item]
+</code></pre></div><p><strong>item</strong></p> <ul><li>空: 查看当前目录可用的任务和模板</li> <li>config/configs : 查看 FBI 全局配置</li> <li>store/stores : 查看模板仓库信息</li> <li>util/utils : 查看可用工具类</li></ul> <p><strong>例子</strong></p> <div class="language- extra-class"><pre class="language-text"><code>$ fbi ls
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>$ fbi ls config
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>$ fbi ls store
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>$ fbi ls util
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>$ fbi ls config store util
+</code></pre></div><h3 id="configs-全局配置说明"><a href="#configs-全局配置说明" class="header-anchor">#</a> <code>configs</code> 全局配置说明</h3> <ul><li>查看：<code>$ fbi ls config</code></li> <li>设置：<code>$ fbi set</code></li> <li>使用：<code>ctx.configs</code></li></ul> <table><thead><tr><th>项</th> <th style="text-align:center;">说明</th> <th style="text-align:right;">默认值</th></tr></thead> <tbody><tr><td>_DATA_ROOT (只读)</td> <td style="text-align:center;">本地仓库目录</td> <td style="text-align:right;">/Users/{yourname}/.fbi</td></tr> <tr><td>_STORE_FILE (只读)</td> <td style="text-align:center;">仓库信息文件路径</td> <td style="text-align:right;">/Users/{yourname}/.fbi/store.json</td></tr> <tr><td>_CUSTOM_CONFIG_FILE (只读)</td> <td style="text-align:center;">自定义配置文件路径</td> <td style="text-align:right;">/Users/{yourname}/.fbi/configs.custom.json</td></tr> <tr><td>LOG_LEVEL</td> <td style="text-align:center;">日志级别</td> <td style="text-align:right;">info</td></tr> <tr><td>LOG_PREFIX</td> <td style="text-align:center;">日志前缀</td> <td style="text-align:right;">FBI..&gt;</td></tr> <tr><td>NPM</td> <td style="text-align:center;">npm 别名</td> <td style="text-align:right;">npm</td></tr> <tr><td>NPM_OPTIONS</td> <td style="text-align:center;">npm 参数</td> <td style="text-align:right;">空</td></tr> <tr><td>TASK_PREFIX</td> <td style="text-align:center;">任务模板前缀</td> <td style="text-align:right;">fbi-task-</td></tr> <tr><td>TEMPLATE_PREFIX</td> <td style="text-align:center;">项目模板前缀</td> <td style="text-align:right;">fbi-project-</td></tr> <tr><td>TEMPLATE_TASK</td> <td style="text-align:center;">模板内任务文件目录名</td> <td style="text-align:right;">fbi</td></tr> <tr><td>TEMPLATE_CONFIG</td> <td style="text-align:center;">模板配置文件路径</td> <td style="text-align:right;">fbi/options.js</td></tr> <tr><td>TEMPLATE_INIT_IGNORE</td> <td style="text-align:center;">初始化项目时的忽略项</td> <td style="text-align:right;">node_modules,.DS_Store,.svn,.git,<br>dst,dist,package.json,fbi,yarn.lock,<br>package-lock.json</td></tr> <tr><td>TEMPLATE_ADD_IGNORE</td> <td style="text-align:center;">添加模板时的忽略项</td> <td style="text-align:right;">.DS_Store,.svn,.git,dst,dist</td></tr> <tr><td>VERSION_SEPARATOR</td> <td style="text-align:center;">版本分隔符</td> <td style="text-align:right;">@</td></tr></tbody></table> <h3 id="stores-仓库信息说明"><a href="#stores-仓库信息说明" class="header-anchor">#</a> <code>stores</code> 仓库信息说明</h3> <ul><li>查看： <code>$ fbi ls store</code></li> <li>使用：<code>ctx.stores</code></li></ul> <table><thead><tr><th>项</th> <th style="text-align:center;">说明</th> <th style="text-align:right;">示例</th></tr></thead> <tbody><tr><td>type</td> <td style="text-align:center;">模板类型</td> <td style="text-align:right;">project/task</td></tr> <tr><td>path</td> <td style="text-align:center;">模板路径</td> <td style="text-align:right;">/Users/{yourname}/.fbi/fbi-project-simple</td></tr> <tr><td>version</td> <td style="text-align:center;">模板版本信息</td> <td style="text-align:right;">false: 不支持版本控制<br>{&quot;latest&quot;:&quot;v3.1.0&quot;,&quot;current&quot;:&quot;v3.1.0&quot;,&quot;all&quot;:[&quot;v3.0.0&quot;,&quot;v3.1.0&quot;]}</td></tr> <tr><td>repository</td> <td style="text-align:center;">模板来源路径</td> <td style="text-align:right;"><a href="https://github.com/fbi-templates/fbi-project-mod.git" target="_blank" rel="noopener noreferrer">https://github.com/fbi-templates/fbi-project-mod.git<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></td></tr> <tr><td>description</td> <td style="text-align:center;">模板描述</td> <td style="text-align:right;">Node service, npm module template.</td></tr> <tr><td>tasks</td> <td style="text-align:center;">模板内含任务</td> <td style="text-align:right;">build,serve</td></tr></tbody></table> <h3 id="utils-内置工具类说明"><a href="#utils-内置工具类说明" class="header-anchor">#</a> utils 内置工具类说明</h3> <ul><li>查看： <code>$ fbi ls util</code></li> <li>使用：<code>ctx.utils[分类][方法] / ctx.utils[方法]</code></li></ul> <table><thead><tr><th>分类</th> <th style="text-align:center;">方法</th> <th style="text-align:right;">说明</th></tr></thead> <tbody><tr><td>fs</td> <td style="text-align:center;">stat,mkdirp,exist,existSync,read,<br>write,copy,remove,list,isEmptyDir,homeDir</td> <td style="text-align:right;">文件操作类</td></tr> <tr><td>style</td> <td style="text-align:center;">bold,italic,underline,inverse,white,<br>grey,black,blue,cyan,green,magenta,red,<br>yellow,normal</td> <td style="text-align:right;">文本样式类</td></tr> <tr><td>type</td> <td style="text-align:center;">isJson,isObject,isArray,isTaskFile,<br>isPath,isGitUrl</td> <td style="text-align:right;">类型判断类</td></tr> <tr><td>git</td> <td style="text-align:center;">is,clone,pull,tags,currentTag,<br>currentBranch,checkout,getBranchs</td> <td style="text-align:right;">git 操作类</td></tr> <tr><td>path</td> <td style="text-align:center;">isAbsolute,isRelative,normalize,cwd,join,dir</td> <td style="text-align:right;">path 操作类</td></tr> <tr><td>Logger</td> <td style="text-align:center;">debug,info,success,warn,error,log</td> <td style="text-align:right;">日志类， 使用方法 ：const log = new ctx.utils.Logger(); log.info(‘’)</td></tr> <tr><td>其他</td> <td style="text-align:center;">argvParse</td> <td style="text-align:right;">终端参数解析</td></tr> <tr><td>其他</td> <td style="text-align:center;">assign</td> <td style="text-align:right;">json 深合并</td></tr> <tr><td>其他</td> <td style="text-align:center;">dateFormat</td> <td style="text-align:right;">日期时间格式化</td></tr> <tr><td>其他</td> <td style="text-align:center;">exec</td> <td style="text-align:right;">spawn 的 promise 版</td></tr> <tr><td>其他</td> <td style="text-align:center;">flow</td> <td style="text-align:right;">终端交互方法</td></tr> <tr><td>其他</td> <td style="text-align:center;">promisify</td> <td style="text-align:right;">promise 化</td></tr> <tr><td>其他</td> <td style="text-align:center;">sequence</td> <td style="text-align:right;">顺序执行多个 promise</td></tr></tbody></table> <p>特殊工具类 logger 使用：<code>ctx.logger[方法]</code></p> <h2 id="运行任务"><a href="#运行任务" class="header-anchor">#</a> 运行任务</h2> <div class="language- extra-class"><pre class="language-text"><code>$ fbi &lt;task&gt; [params] [mode]
+</code></pre></div><p><strong>task</strong></p> <ul><li>描述：任务名称或别名</li> <li>类型：必需</li> <li>例子：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>$ fbi &lt;task&gt; [params] [mode]
+</code></pre></div><p><strong>task</strong></p> <ul><li>描述：任务名称或别名</li> <li>类型：必需</li> <li>例子：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>$ fbi s
+# 或
+$ fbi serve
+</code></pre></div><p><strong>params</strong></p> <ul><li>描述：任务参数 (由模板任务开发者提供。接收参数并在任务文件里处理。)</li> <li>类型：可选</li> <li>例子：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>$ fbi s -port=4000  # 在4000端口启动服务
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>$ fbi b -test       # 为测试环境构建项目
+</code></pre></div><p><strong>mode</strong></p> <ul><li>描述：模式</li> <li>类型：可选</li> <li>取值：
+<ul><li>-T: 在模板环境</li> <li>-G: 在全局环境</li></ul></li> <li>例子：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>$ fbi s -T # 运行模板任务`s`
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>$ fbi s -G # 运行全局任务`s`
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>$ fbi s -port=4000 -G # 运行全局任务`s`，在 4000 端口启动服务
+</code></pre></div><h2 id="模板管理"><a href="#模板管理" class="header-anchor">#</a> 模板管理</h2> <h3 id="添加"><a href="#添加" class="header-anchor">#</a> 添加</h3> <div class="language- extra-class"><pre class="language-text"><code>$ fbi add &lt;template&gt;
+</code></pre></div><p><strong>template</strong></p> <ul><li>描述：模板路径</li> <li>类型：必需</li> <li>取值：
+<ul><li>远程 git 仓库地址，如：https://github.com/fbi-templates/fbi-project-vue.git</li> <li>本地模板路径，如：path/to/local/template</li> <li>. : 当前目录</li></ul></li> <li>例子：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>$ fbi add https://github.com/fbi-templates/fbi-project-vue.git
+$ fbi add ./my-tmpl-a
+$ fbi add .
+</code></pre></div><h3 id="更新"><a href="#更新" class="header-anchor">#</a> 更新</h3> <div class="language- extra-class"><pre class="language-text"><code>$ fbi up &lt;template&gt;
+$ fbi update &lt;template&gt;
+</code></pre></div><p><strong>template</strong></p> <ul><li>描述：模板名称</li> <li>类型：必需</li> <li>例子：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>$ fbi up vue
+$ fbi update vue
+</code></pre></div><h3 id="删除"><a href="#删除" class="header-anchor">#</a> 删除</h3> <div class="language- extra-class"><pre class="language-text"><code>$ fbi rm &lt;template&gt;
+$ fbi remove &lt;template&gt;
+</code></pre></div><p><strong>template</strong></p> <ul><li>描述：模板名称</li> <li>类型：必需</li> <li>例子：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>$ fbi rm vue
+$ fbi remove vue
+</code></pre></div><h2 id="项目管理"><a href="#项目管理" class="header-anchor">#</a> 项目管理</h2> <h3 id="初始化"><a href="#初始化" class="header-anchor">#</a> 初始化</h3> <div class="language- extra-class"><pre class="language-text"><code>$ fbi init &lt;template&gt;[@&lt;version&gt;] [project] [option]
+</code></pre></div><p><strong>template</strong></p> <ul><li>描述：模板名称或路径</li> <li>类型：必需</li> <li>取值：
+<ul><li>远程 git 仓库地址，如：https://github.com/fbi-templates/fbi-project-vue.git</li> <li>本地模板名称，如：vue</li></ul></li> <li>例子：</li></ul> <div class="language-shell extra-class"><pre class="language-shell"><code>$ <span class="token builtin class-name">cd</span> path/to/project
+$ fbi init https://github.com/fbi-templates/fbi-project-vue.git
+$ fbi init vue
+</code></pre></div><p><strong>version</strong></p> <ul><li>描述：模板版本号</li> <li>类型：可选</li> <li>例子：</li></ul> <div class="language-shell extra-class"><pre class="language-shell"><code>$ <span class="token builtin class-name">cd</span> path/to/project
+$ fbi init vue@1.0.1
+</code></pre></div><p><strong>project</strong></p> <ul><li>描述：项目路径</li> <li>类型：可选</li> <li>例子：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>$ fbi init vue@1.0.1 path/to/project
+</code></pre></div><p><strong>option</strong></p> <ul><li>描述：模板选项</li> <li>类型：可选</li> <li>取值：
+<ul><li>空: 只有项目源码，和指定模板名称</li> <li>-o/-option: 带上项目配置</li> <li>-t/-task: 带上项目配置和任务</li> <li>-a/-all: 所有文件(除.git 目录外)，基于已有模版生成新的模版</li></ul></li> <li>例子：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>$ fbi init vue my-project
+$ fbi init vue my-project -o
+$ fbi init vue my-project -t
+$ fbi init vue my-project -a
+</code></pre></div><blockquote><p>在已有项目上执行 <code>fbi init [option]</code>, 只更新指定的 option, 不更新 src。</p></blockquote> <h3 id="切换模板版本"><a href="#切换模板版本" class="header-anchor">#</a> 切换模板版本</h3> <div class="language- extra-class"><pre class="language-text"><code>$ fbi use &lt;version&gt;
+</code></pre></div><p><strong>version</strong></p> <ul><li>描述：模板版本号</li> <li>类型：必需</li> <li>取值：可通过 fbi ls store 查看特定模板的版本号，详情参考</li> <li>例子：</li></ul> <div class="language-shell extra-class"><pre class="language-shell"><code>$ <span class="token builtin class-name">cd</span> path/to/project
+$ fbi init https://github.com/fbi-templates/fbi-project-vue.git
+$ fbi init vue
+</code></pre></div><h2 id="模板开发"><a href="#模板开发" class="header-anchor">#</a> 模板开发</h2> <h3 id="创建目录结构"><a href="#创建目录结构" class="header-anchor">#</a> 创建目录结构</h3> <p>按需求创建目录结构，推荐结构:</p> <div class="language- extra-class"><pre class="language-text"><code>|-- fbi-project-name
+|--|-- src
+|--|--|-- ...
+|--|-- fbi
+|--|--|-- options.js
+|--|--|-- build.js
+|--|-- package.json
+</code></pre></div><h3 id="任务开发"><a href="#任务开发" class="header-anchor">#</a> 任务开发</h3> <p>1.fbi 目录内新建任务文件<br>
+2.正常编写任务文件<br>
+3.配置任务别名和说明<br>
+在 package.json 内添加 fbi 字段，示例：</p> <div class="language-JSON extra-class"><pre class="language-json"><code><span class="token property">&quot;fbi&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;template&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;fbi-project-mod&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;tasks&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;build&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;alias&quot;</span><span class="token operator">:</span> <span class="token string">&quot;b&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;desc&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Build the project.&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;serve&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;alias&quot;</span><span class="token operator">:</span> <span class="token string">&quot;s&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;desc&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Compile the code and start the development server.&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><h3 id="测试"><a href="#测试" class="header-anchor">#</a> 测试</h3> <div class="language-shell extra-class"><pre class="language-shell"><code>$ fbi <span class="token function">add</span> <span class="token builtin class-name">.</span>
+
+$ <span class="token builtin class-name">cd</span> path/to/test/workspace
+$ fbi init 项目模板名称 项目名称   <span class="token comment"># 可通过 fbi ls 查看刚刚添加成功的项目模板</span>
+
+$ <span class="token builtin class-name">cd</span> 项目目录
+$ fbi <span class="token function">ls</span> <span class="token comment"># 查看可用任务</span>
+$ fbi 任务名称或任务别名
+</code></pre></div><h3 id="提交到-git-仓库"><a href="#提交到-git-仓库" class="header-anchor">#</a> 提交到 git 仓库</h3> <p>如果想共享给别人，请把 git 仓库地址告诉对方</p> <h2 id="依赖管理"><a href="#依赖管理" class="header-anchor">#</a> 依赖管理</h2> <h3 id="自动安装依赖"><a href="#自动安装依赖" class="header-anchor">#</a> 自动安装依赖</h3> <p>在检测到所需依赖不存在的情况下，FBI 会自动安装如下依赖:</p> <ul><li>模板的开发依赖 <code>devDependencies</code></li> <li>项目的生产依赖 <code>dependencies</code></li></ul> <p>会触发自动安装依赖的情形:</p> <ul><li><code>$ fbi init &lt;template&gt;</code></li> <li><code>$ fbi &lt;task&gt;</code></li></ul> <h3 id="手动安装依赖"><a href="#手动安装依赖" class="header-anchor">#</a> 手动安装依赖</h3> <div class="language-shell extra-class"><pre class="language-shell"><code>$ <span class="token builtin class-name">cd</span> path/to/project
+$ fbi <span class="token function">install</span>
+</code></pre></div><h2 id="接入-fbi"><a href="#接入-fbi" class="header-anchor">#</a> 接入 FBI</h2> <p>待补充</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最近更新:</span> <span class="time">7/30/2020, 3:21:21 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/pages/3x/entry.html" class="prev">
+        入门
+      </a></span> <span class="next"><a href="/pages/3x/more.html">
+        官方模板列表
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.199ef741.js" defer></script><script src="/assets/js/2.748c1ab3.js" defer></script><script src="/assets/js/7.74c49802.js" defer></script>
+  </body>
+</html>
