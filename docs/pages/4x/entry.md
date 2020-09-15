@@ -30,7 +30,7 @@ $ fbi create <tempalate|factory> [project]
 
 > 使用 `$ fbi ls` 可以查看已添加和关联的仓库及模板
 
-### 三、运行任务
+### 三、运行项目
 
 ```shell
 $ cd my-project
@@ -38,6 +38,16 @@ $ cd my-project
 $ fbi serve
 # OR
 $ fbi s
+```
+
+### 四、打包项目
+
+```shell
+$ cd my-project
+
+$ fbi build
+# OR
+$ fbi b
 ```
 
 > `$ fbi ls` 可以查看已添加和关联的仓库及模板
