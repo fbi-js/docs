@@ -22,5 +22,6 @@ module.exports = {
     markdown: {
       extracHeaders: ['h2', 'h3', 'h4']
     }
-  }
+  },
+  base: '/docs/'
 }
