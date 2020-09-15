@@ -1,9 +1,9 @@
 module.exports = {
   title: 'fbi docs',
   description: 'fbi文档, docs, doucument',
-  head: [['link', { rel: 'icon', href: 'logo.png' }]],
+  head: [['link', { rel: 'icon', href: '/logo.png' }]],
   themeConfig: {
-    logo: '../logo.png',
+    logo: '/logo.png',
     nav: [
       {
         text: '版本',
