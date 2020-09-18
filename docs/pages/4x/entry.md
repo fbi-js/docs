@@ -5,11 +5,11 @@
 FBI 需安装在全局，以便在任意目录可开始你的工作流。
 
 ```shell
-$ npm i -g fbi@next
+$ npm i -g fbi
 # OR
-$ yarn global add fbi@next
+$ yarn global add fbi
 # OR
-$ pnpm i -g fbi@next
+$ pnpm i -g fbi
 ```
 
 ## 快速开始
