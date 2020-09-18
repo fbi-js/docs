@@ -1,7 +1,6 @@
 ---
 home: true
 heroImage: /logo.png
-heroText: FBI
 tagline: 开源的工作流工具
 actionText: 快速上手 →
 actionLink: /pages/4x/
