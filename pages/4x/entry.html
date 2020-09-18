@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>入门 | fbi docs</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/docs/logo.png">
+    <meta name="description" content="fbi文档, docs, doucument">
+    <link rel="preload" href="/docs/assets/css/0.styles.42be6d76.css" as="style"><link rel="preload" href="/docs/assets/js/app.f10f8fd2.js" as="script"><link rel="preload" href="/docs/assets/js/2.0dca740b.js" as="script"><link rel="preload" href="/docs/assets/js/13.b811e35f.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.0c93c31a.js"><link rel="prefetch" href="/docs/assets/js/11.3ffccf80.js"><link rel="prefetch" href="/docs/assets/js/12.36a50862.js"><link rel="prefetch" href="/docs/assets/js/14.0054d0fc.js"><link rel="prefetch" href="/docs/assets/js/3.7eb1475e.js"><link rel="prefetch" href="/docs/assets/js/4.8bb21d76.js"><link rel="prefetch" href="/docs/assets/js/5.cbf9e254.js"><link rel="prefetch" href="/docs/assets/js/6.1383e9e8.js"><link rel="prefetch" href="/docs/assets/js/7.95026710.js"><link rel="prefetch" href="/docs/assets/js/8.84a9317e.js"><link rel="prefetch" href="/docs/assets/js/9.ae29d357.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.42be6d76.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><img src="/docs/logo.png" alt="fbi docs" class="logo"> <span class="site-name can-hide">fbi docs</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="版本" class="dropdown-title"><span class="title">版本</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/pages/3x/" class="nav-link">
+  3.x
+</a></li><li class="dropdown-item"><!----> <a href="/docs/pages/4x/" class="nav-link router-link-active">
+  4.x
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="版本" class="dropdown-title"><span class="title">版本</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/pages/3x/" class="nav-link">
+  3.x
+</a></li><li class="dropdown-item"><!----> <a href="/docs/pages/4x/" class="nav-link router-link-active">
+  4.x
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/docs/pages/4x/" aria-current="page" class="sidebar-link">4.x 文档</a></li><li><a href="/docs/pages/4x/entry.html" aria-current="page" class="active sidebar-link">入门</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/pages/4x/entry.html#安装" class="sidebar-link">安装</a></li><li class="sidebar-sub-header"><a href="/docs/pages/4x/entry.html#快速开始" class="sidebar-link">快速开始</a></li></ul></li><li><a href="/docs/pages/4x/advance.html" class="sidebar-link">进阶</a></li><li><a href="/docs/pages/4x/more.html" class="sidebar-link">更多内容</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="入门"><a href="#入门" class="header-anchor">#</a> 入门</h1> <h2 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h2> <p>FBI 需安装在全局，以便在任意目录可开始你的工作流。</p> <div class="language-shell extra-class"><pre class="language-shell"><code>$ <span class="token function">npm</span> i -g fbi
+<span class="token comment"># OR</span>
+$ <span class="token function">yarn</span> global <span class="token function">add</span> fbi
+<span class="token comment"># OR</span>
+$ <span class="token function">pnpm</span> i -g fbi
+</code></pre></div><h2 id="快速开始"><a href="#快速开始" class="header-anchor">#</a> 快速开始</h2> <h3 id="一、基于远程仓库添加-fbi-模板"><a href="#一、基于远程仓库添加-fbi-模板" class="header-anchor">#</a> 一、基于远程仓库添加 fbi 模板</h3> <div class="language- extra-class"><pre class="language-text"><code>$ fbi add &lt;repositories...&gt;
+</code></pre></div><blockquote><p>查看更多官方模板：<a href="/docs/pages/4x/more.html">官方模板列表</a></p></blockquote> <h3 id="二、通过添加的模板创建项目"><a href="#二、通过添加的模板创建项目" class="header-anchor">#</a> 二、通过添加的模板创建项目</h3> <div class="language-bash extra-class"><pre class="language-bash"><code>$ fbi create <span class="token operator">&lt;</span>tempalate<span class="token operator">|</span>factory<span class="token operator">&gt;</span> <span class="token punctuation">[</span>project<span class="token punctuation">]</span>
+</code></pre></div><blockquote><p>使用 <code>$ fbi ls</code> 可以查看已添加和关联的仓库及模板</p></blockquote> <h3 id="三、运行项目"><a href="#三、运行项目" class="header-anchor">#</a> 三、运行项目</h3> <div class="language-shell extra-class"><pre class="language-shell"><code>$ <span class="token builtin class-name">cd</span> my-project
+
+$ fbi serve
+<span class="token comment"># OR</span>
+$ fbi s
+</code></pre></div><h3 id="四、打包项目"><a href="#四、打包项目" class="header-anchor">#</a> 四、打包项目</h3> <div class="language-shell extra-class"><pre class="language-shell"><code>$ <span class="token builtin class-name">cd</span> my-project
+
+$ fbi build
+<span class="token comment"># OR</span>
+$ fbi b
+</code></pre></div><blockquote><p><code>$ fbi ls</code> 可以查看已添加和关联的仓库及模板</p></blockquote></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最近更新:</span> <span class="time">9/18/2020, 4:11:58 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/pages/4x/" class="prev router-link-active">
+        4.x 文档
+      </a></span> <span class="next"><a href="/docs/pages/4x/advance.html">
+        进阶
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><div id="live2d-widget" class="live2d-widget-container" style="position:fixed;right:65px;bottom:0px;width:150px;height:350px;z-index:99999;opacity:1;pointer-events:none;"><canvas id="live2d_canvas" width="150" height="350" class="live2d_canvas" style="position:absolute;left:0px;top:0px;width:150px;height:350px;"></canvas></div></div></div>
+    <script src="/docs/assets/js/app.f10f8fd2.js" defer></script><script src="/docs/assets/js/2.0dca740b.js" defer></script><script src="/docs/assets/js/13.b811e35f.js" defer></script>
+  </body>
+</html>
