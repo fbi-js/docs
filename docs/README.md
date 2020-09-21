@@ -1,6 +1,7 @@
 ---
 home: true
 heroImage: /logo.png
+heroText: null
 tagline: 开源的工作流工具
 actionText: 快速上手 →
 actionLink: /pages/4x/
